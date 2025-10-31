@@ -8,11 +8,3 @@ describe("GET /", () => {
         expect(res.text).to.equal("Hello, GitHub Actions!");
     });
 });
-const assert = require("assert");
-
-describe("Sample Test", () => {
-    it("adds numbers correctly", () => {
-        const sum = 2 + 3;
-        assert.strictEqual(sum, 5);
-    });
-});
