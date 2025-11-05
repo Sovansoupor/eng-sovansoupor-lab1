@@ -19,7 +19,8 @@
     "start": "node server.js",
     "test": "mocha --exit",
     "lint": "eslint . --ext .js",
-    "coverage": "nyc --extension .js --all --reporter=lcov --reporter=text mocha --exit"
+    "coverage": "nyc --extension .js --all --reporter=lcov --reporter=text mocha --exit",
+    "build": "yarn lint && yarn test && yarn coverage"
   },
   "nyc": {
     "extension": [
